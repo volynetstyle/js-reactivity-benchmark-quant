@@ -1,68 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1303" viewBox="0 0 1800 1303" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1371" viewBox="0 0 1800 1371" role="img" aria-labelledby="title desc">
   <title id="title">JavaScript framework benchmark times, fastest to slowest</title>
-  <desc id="desc">Average time across 544 benchmark measurements. Bars interpolate from green for fastest to red for slowest.</desc>
+  <desc id="desc">Average time across 578 benchmark measurements. Bars interpolate from green for fastest to red for slowest.</desc>
   <rect width="100%" height="100%" fill="white" />
   <text x="900" y="55" text-anchor="middle" fill="#333" font-size="40" font-family="system-ui, sans-serif">JavaScript Framework Benchmark Times (Fastest to Slowest)</text>
-  <text x="900" y="88" text-anchor="middle" fill="#666" font-size="20" font-family="system-ui, sans-serif">Arithmetic mean across 544 measurements · 2026-11-16 · lower is better</text>
-  <line x1="390" y1="96" x2="390" y2="1216" stroke="#c8c8c8" stroke-dasharray="6 6" />
-<text x="390" y="1267" text-anchor="middle" fill="#333" font-size="24">0</text>
-<line x1="720" y1="96" x2="720" y2="1216" stroke="#c8c8c8" stroke-dasharray="6 6" />
-<text x="720" y="1267" text-anchor="middle" fill="#333" font-size="24">187</text>
-<line x1="1050" y1="96" x2="1050" y2="1216" stroke="#c8c8c8" stroke-dasharray="6 6" />
-<text x="1050" y="1267" text-anchor="middle" fill="#333" font-size="24">374</text>
-<line x1="1380" y1="96" x2="1380" y2="1216" stroke="#c8c8c8" stroke-dasharray="6 6" />
-<text x="1380" y="1267" text-anchor="middle" fill="#333" font-size="24">561</text>
-<line x1="1710" y1="96" x2="1710" y2="1216" stroke="#c8c8c8" stroke-dasharray="6 6" />
-<text x="1710" y="1267" text-anchor="middle" fill="#333" font-size="24">748</text>
-  <text x="372" y="154" text-anchor="end" fill="#222" font-size="28">alien-signals</text>
-<rect x="390" y="128" width="110.3003935615146" height="52" rx="2" fill="rgb(20,150,20)" />
-<text x="512.3003935615146" y="154" text-anchor="start" fill="#222" font-size="22">62.5 ms</text>
-<text x="372" y="222" text-anchor="end" fill="#222" font-size="28">Preact Signals</text>
-<rect x="390" y="196" width="132.1644584778827" height="52" rx="2" fill="rgb(36,140,20)" />
-<text x="534.1644584778827" y="222" text-anchor="start" fill="#222" font-size="22">74.9 ms</text>
-<text x="372" y="290" text-anchor="end" fill="#222" font-size="28">@pravosleva/reactive-engine</text>
-<rect x="390" y="264" width="153.7116628878908" height="52" rx="2" fill="rgb(51,130,20)" />
-<text x="555.7116628878908" y="290" text-anchor="start" fill="#222" font-size="22">87.1 ms</text>
-<text x="372" y="358" text-anchor="end" fill="#222" font-size="28">@vue/reactivity</text>
-<rect x="390" y="332" width="170.57048038290063" height="52" rx="2" fill="rgb(67,120,20)" />
-<text x="572.5704803829007" y="358" text-anchor="start" fill="#222" font-size="22">96.7 ms</text>
-<text x="372" y="426" text-anchor="end" fill="#222" font-size="28">Oby</text>
-<rect x="390" y="400" width="211.41659483985944" height="52" rx="2" fill="rgb(83,110,20)" />
-<text x="613.4165948398595" y="426" text-anchor="start" fill="#222" font-size="22">119.9 ms</text>
-<text x="372" y="494" text-anchor="end" fill="#222" font-size="28">@amadeus-it-group/tansu</text>
-<rect x="390" y="468" width="219.36311788723512" height="52" rx="2" fill="rgb(98,100,20)" />
-<text x="621.3631178872351" y="494" text-anchor="start" fill="#222" font-size="22">124.4 ms</text>
-<text x="372" y="562" text-anchor="end" fill="#222" font-size="28">Pota</text>
-<rect x="390" y="536" width="235.07796820719076" height="52" rx="2" fill="rgb(114,90,20)" />
-<text x="637.0779682071908" y="562" text-anchor="start" fill="#222" font-size="22">133.3 ms</text>
-<text x="372" y="630" text-anchor="end" fill="#222" font-size="28">uSignal</text>
-<rect x="390" y="604" width="268.0932060755281" height="52" rx="2" fill="rgb(130,80,20)" />
-<text x="670.0932060755281" y="630" text-anchor="start" fill="#222" font-size="22">152.0 ms</text>
-<text x="372" y="698" text-anchor="end" fill="#222" font-size="28">MobX</text>
-<rect x="390" y="672" width="278.477450849811" height="52" rx="2" fill="rgb(145,70,20)" />
-<text x="680.477450849811" y="698" text-anchor="start" fill="#222" font-size="22">157.9 ms</text>
-<text x="372" y="766" text-anchor="end" fill="#222" font-size="28">$mol_wire</text>
-<rect x="390" y="740" width="281.3530177890088" height="52" rx="2" fill="rgb(161,60,20)" />
-<text x="683.3530177890088" y="766" text-anchor="start" fill="#222" font-size="22">159.5 ms</text>
-<text x="372" y="834" text-anchor="end" fill="#222" font-size="28">@angular/signals</text>
-<rect x="390" y="808" width="286.1371144437143" height="52" rx="2" fill="rgb(177,50,20)" />
-<text x="688.1371144437144" y="834" text-anchor="start" fill="#222" font-size="22">162.2 ms</text>
-<text x="372" y="902" text-anchor="end" fill="#222" font-size="28">x-reactivity</text>
-<rect x="390" y="876" width="374.0526397515955" height="52" rx="2" fill="rgb(192,40,20)" />
-<text x="776.0526397515955" y="902" text-anchor="start" fill="#222" font-size="22">212.1 ms</text>
-<text x="372" y="970" text-anchor="end" fill="#222" font-size="28">SolidJS</text>
-<rect x="390" y="944" width="390.796869099245" height="52" rx="2" fill="rgb(208,30,20)" />
-<text x="792.796869099245" y="970" text-anchor="start" fill="#222" font-size="22">221.6 ms</text>
-<text x="372" y="1038" text-anchor="end" fill="#222" font-size="28">@tldraw/state</text>
-<rect x="390" y="1012" width="592.7480928445017" height="52" rx="2" fill="rgb(224,20,20)" />
-<text x="994.7480928445017" y="1038" text-anchor="start" fill="#222" font-size="22">336.1 ms</text>
-<text x="372" y="1106" text-anchor="end" fill="#222" font-size="28">TC39 Signals Polyfill</text>
-<rect x="390" y="1080" width="1304.4409964083522" height="52" rx="2" fill="rgb(239,10,20)" />
-<text x="1682.4409964083522" y="1106" text-anchor="end" fill="white" font-size="22">739.5 ms</text>
-<text x="372" y="1174" text-anchor="end" fill="#222" font-size="28">Svelte v5</text>
-<rect x="390" y="1148" width="1320" height="52" rx="2" fill="rgb(255,0,20)" />
-<text x="1698" y="1174" text-anchor="end" fill="white" font-size="22">748.4 ms</text>
-  <line x1="390" y1="96" x2="390" y2="1216" stroke="#222" stroke-width="2" />
-  <text x="1050" y="1298" text-anchor="middle" fill="#333" font-size="26">Average time (ms)</text>
+  <text x="900" y="88" text-anchor="middle" fill="#666" font-size="20" font-family="system-ui, sans-serif">Arithmetic mean across 578 measurements · 2026-11-16 · lower is better</text>
+  <line x1="390" y1="96" x2="390" y2="1284" stroke="#c8c8c8" stroke-dasharray="6 6" />
+<text x="390" y="1335" text-anchor="middle" fill="#333" font-size="24">0</text>
+<line x1="720" y1="96" x2="720" y2="1284" stroke="#c8c8c8" stroke-dasharray="6 6" />
+<text x="720" y="1335" text-anchor="middle" fill="#333" font-size="24">399</text>
+<line x1="1050" y1="96" x2="1050" y2="1284" stroke="#c8c8c8" stroke-dasharray="6 6" />
+<text x="1050" y="1335" text-anchor="middle" fill="#333" font-size="24">798</text>
+<line x1="1380" y1="96" x2="1380" y2="1284" stroke="#c8c8c8" stroke-dasharray="6 6" />
+<text x="1380" y="1335" text-anchor="middle" fill="#333" font-size="24">1197</text>
+<line x1="1710" y1="96" x2="1710" y2="1284" stroke="#c8c8c8" stroke-dasharray="6 6" />
+<text x="1710" y="1335" text-anchor="middle" fill="#333" font-size="24">1596</text>
+  <text x="372" y="154" text-anchor="end" fill="#222" font-size="28">reflex-quant</text>
+<rect x="390" y="128" width="71.90505961267422" height="52" rx="2" fill="rgb(20,150,20)" />
+<text x="473.9050596126742" y="154" text-anchor="start" fill="#222" font-size="22">86.9 ms</text>
+<text x="372" y="222" text-anchor="end" fill="#222" font-size="28">alien-signals</text>
+<rect x="390" y="196" width="87.3546278287402" height="52" rx="2" fill="rgb(35,141,20)" />
+<text x="489.3546278287402" y="222" text-anchor="start" fill="#222" font-size="22">105.6 ms</text>
+<text x="372" y="290" text-anchor="end" fill="#222" font-size="28">Preact Signals</text>
+<rect x="390" y="264" width="107.23631858905729" height="52" rx="2" fill="rgb(49,131,20)" />
+<text x="509.2363185890573" y="290" text-anchor="start" fill="#222" font-size="22">129.6 ms</text>
+<text x="372" y="358" text-anchor="end" fill="#222" font-size="28">@pravosleva/reactive-engine</text>
+<rect x="390" y="332" width="135.75439508435778" height="52" rx="2" fill="rgb(64,122,20)" />
+<text x="537.7543950843578" y="358" text-anchor="start" fill="#222" font-size="22">164.1 ms</text>
+<text x="372" y="426" text-anchor="end" fill="#222" font-size="28">@vue/reactivity</text>
+<rect x="390" y="400" width="155.41700154067613" height="52" rx="2" fill="rgb(79,113,20)" />
+<text x="557.4170015406761" y="426" text-anchor="start" fill="#222" font-size="22">187.9 ms</text>
+<text x="372" y="494" text-anchor="end" fill="#222" font-size="28">Oby</text>
+<rect x="390" y="468" width="176.6536966693045" height="52" rx="2" fill="rgb(93,103,20)" />
+<text x="578.6536966693045" y="494" text-anchor="start" fill="#222" font-size="22">213.6 ms</text>
+<text x="372" y="562" text-anchor="end" fill="#222" font-size="28">@amadeus-it-group/tansu</text>
+<rect x="390" y="536" width="186.98307822807806" height="52" rx="2" fill="rgb(108,94,20)" />
+<text x="588.983078228078" y="562" text-anchor="start" fill="#222" font-size="22">226.1 ms</text>
+<text x="372" y="630" text-anchor="end" fill="#222" font-size="28">Pota</text>
+<rect x="390" y="604" width="209.4065677862982" height="52" rx="2" fill="rgb(123,84,20)" />
+<text x="611.4065677862982" y="630" text-anchor="start" fill="#222" font-size="22">253.2 ms</text>
+<text x="372" y="698" text-anchor="end" fill="#222" font-size="28">uSignal</text>
+<rect x="390" y="672" width="225.27251173717065" height="52" rx="2" fill="rgb(138,75,20)" />
+<text x="627.2725117371706" y="698" text-anchor="start" fill="#222" font-size="22">272.3 ms</text>
+<text x="372" y="766" text-anchor="end" fill="#222" font-size="28">@angular/signals</text>
+<rect x="390" y="740" width="230.94260230864393" height="52" rx="2" fill="rgb(152,66,20)" />
+<text x="632.9426023086439" y="766" text-anchor="start" fill="#222" font-size="22">279.2 ms</text>
+<text x="372" y="834" text-anchor="end" fill="#222" font-size="28">$mol_wire</text>
+<rect x="390" y="808" width="241.16533794398845" height="52" rx="2" fill="rgb(167,56,20)" />
+<text x="643.1653379439884" y="834" text-anchor="start" fill="#222" font-size="22">291.6 ms</text>
+<text x="372" y="902" text-anchor="end" fill="#222" font-size="28">MobX</text>
+<rect x="390" y="876" width="272.0518603944846" height="52" rx="2" fill="rgb(182,47,20)" />
+<text x="674.0518603944846" y="902" text-anchor="start" fill="#222" font-size="22">328.9 ms</text>
+<text x="372" y="970" text-anchor="end" fill="#222" font-size="28">x-reactivity</text>
+<rect x="390" y="944" width="333.4913731318663" height="52" rx="2" fill="rgb(196,38,20)" />
+<text x="735.4913731318663" y="970" text-anchor="start" fill="#222" font-size="22">403.2 ms</text>
+<text x="372" y="1038" text-anchor="end" fill="#222" font-size="28">SolidJS</text>
+<rect x="390" y="1012" width="334.34390313006173" height="52" rx="2" fill="rgb(211,28,20)" />
+<text x="736.3439031300618" y="1038" text-anchor="start" fill="#222" font-size="22">404.2 ms</text>
+<text x="372" y="1106" text-anchor="end" fill="#222" font-size="28">@tldraw/state</text>
+<rect x="390" y="1080" width="440.6968513264781" height="52" rx="2" fill="rgb(226,19,20)" />
+<text x="842.696851326478" y="1106" text-anchor="start" fill="#222" font-size="22">532.8 ms</text>
+<text x="372" y="1174" text-anchor="end" fill="#222" font-size="28">TC39 Signals Polyfill</text>
+<rect x="390" y="1148" width="929.0178304607332" height="52" rx="2" fill="rgb(240,9,20)" />
+<text x="1331.0178304607332" y="1174" text-anchor="start" fill="#222" font-size="22">1123.2 ms</text>
+<text x="372" y="1242" text-anchor="end" fill="#222" font-size="28">Svelte v5</text>
+<rect x="390" y="1216" width="1320" height="52" rx="2" fill="rgb(255,0,20)" />
+<text x="1698" y="1242" text-anchor="end" fill="white" font-size="22">1595.8 ms</text>
+  <line x1="390" y1="96" x2="390" y2="1284" stroke="#222" stroke-width="2" />
+  <text x="1050" y="1366" text-anchor="middle" fill="#333" font-size="26">Average time (ms)</text>
 </svg>
