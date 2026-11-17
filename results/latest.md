@@ -1,10 +1,10 @@
 # Benchmark snapshot
 
-2026-11-16T19:01:45.959Z → 2026-11-16T19:16:36.664Z
+2026-11-17T12:13:55.074Z → 2026-11-17T12:25:41.136Z
 
 **passed** · full · observed graphs · CellX standard
 
-v24.22.2 · AMD EPYC 7763 64-Core Processor · linux x64
+v24.22.2 · AMD EPYC 9V74 80-Core Processor · linux x64
 
 578 measurements; 0 failed suites. Times are milliseconds. Each framework/suite runs in a fresh process; values are the minimum of 3 samples. Explicit GC is outside timing. Raw samples are in the adjacent JSON file. See the repository README for workload definitions and limitations.
 
@@ -14,23 +14,23 @@ Geometric mean of each case's time divided by the fastest engine on that case. L
 
 | Engine | kairo | mol | s | dynamic | cellx |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| alien-signals | 1.12× | 1.23× | 1.30× | 1.34× | 1.09× |
-| @angular/signals | 3.50× | 1.27× | 3.39× | 3.97× | 1.98× |
-| MobX | 4.81× | 1.28× | 4.43× | 3.95× | 3.66× |
-| $mol_wire | 4.65× | 1.00× | 5.22× | 3.35× | 2.55× |
-| Oby | 2.46× | 1.48× | 4.61× | 2.72× | 2.29× |
-| Pota | 3.47× | 1.49× | 4.03× | 3.28× | 2.07× |
-| reflex-quant | 1.00× | 1.20× | 1.00× | 1.00× | 1.00× |
-| x-reactivity | 5.53× | 1.54× | 4.50× | 5.13× | 4.08× |
-| Preact Signals | 1.32× | 1.22× | 1.59× | 1.86× | 1.73× |
-| TC39 Signals Polyfill | 7.15× | 1.34× | 4.64× | 13.80× | 2.12× |
-| SolidJS | 5.09× | 1.52× | 4.04× | 5.62× | 1.70× |
-| Svelte v5 | 4.89× | 1.31× | 3.64× | 24.39× | 32.68× |
-| @amadeus-it-group/tansu | 3.29× | 1.28× | 3.23× | 2.76× | 2.45× |
-| @tldraw/state | 4.43× | 1.31× | 3.40× | 7.20× | 2.63× |
-| uSignal | 3.55× | 1.72× | 3.02× | 3.26× | 2.11× |
-| @vue/reactivity | 2.37× | 1.23× | 1.92× | 2.43× | 2.54× |
-| @pravosleva/reactive-engine | 2.01× | 1.36× | 3.71× | 1.75× | 1.56× |
+| alien-signals | 1.11× | 1.25× | 1.15× | 1.32× | 1.21× |
+| @angular/signals | 3.48× | 1.29× | 3.53× | 4.03× | 2.70× |
+| MobX | 4.57× | 1.30× | 4.04× | 3.80× | 3.86× |
+| $mol_wire | 4.50× | 1.00× | 4.74× | 2.80× | 2.93× |
+| Oby | 2.45× | 1.52× | 4.75× | 2.88× | 2.92× |
+| Pota | 3.56× | 1.52× | 3.97× | 3.19× | 1.51× |
+| reflex-quant | 1.01× | 1.23× | 1.03× | 1.00× | 1.06× |
+| x-reactivity | 5.43× | 1.57× | 4.36× | 4.80× | 5.34× |
+| Preact Signals | 1.31× | 1.24× | 1.52× | 1.82× | 1.56× |
+| TC39 Signals Polyfill | 7.00× | 1.35× | 4.39× | 14.61× | 3.16× |
+| SolidJS | 4.77× | 1.53× | 3.89× | 5.70× | 2.20× |
+| Svelte v5 | 5.19× | 1.34× | 3.79× | 26.03× | 42.00× |
+| @amadeus-it-group/tansu | 3.26× | 1.29× | 3.56× | 2.63× | 2.60× |
+| @tldraw/state | 4.35× | 1.33× | 3.24× | 7.34× | 3.19× |
+| uSignal | 3.79× | 1.75× | 3.01× | 3.40× | 2.07× |
+| @vue/reactivity | 2.23× | 1.26× | 1.86× | 2.45× | 2.63× |
+| @pravosleva/reactive-engine | 2.04× | 1.27× | 3.85× | 1.84× | 2.03× |
 
 ## Packages
 
@@ -58,581 +58,581 @@ Geometric mean of each case's time divided by the fastest engine on that case. L
 
 | Framework | Suite | Test | ms |
 | --- | --- | --- | ---: |
-| alien-signals | kairo | avoidablePropagation | 134.5379 |
-| alien-signals | kairo | broadPropagation | 274.2806 |
-| alien-signals | kairo | deepPropagation | 91.2775 |
-| alien-signals | kairo | diamond | 178.5417 |
-| alien-signals | kairo | mux | 281.9422 |
-| alien-signals | kairo | repeatedObservers | 21.9591 |
-| alien-signals | kairo | triangle | 70.5956 |
-| alien-signals | kairo | unstable | 71.5117 |
-| alien-signals | mol | molBench | 648.1006 |
-| alien-signals | s | createDataSignals | 7.8320 |
-| alien-signals | s | createComputations0to1 | 6.0373 |
-| alien-signals | s | createComputations1to1 | 14.9246 |
-| alien-signals | s | createComputations2to1 | 12.3841 |
-| alien-signals | s | createComputations4to1 | 12.7074 |
-| alien-signals | s | createComputations1000to1 | 9.8600 |
-| alien-signals | s | createComputations1to2 | 11.0495 |
-| alien-signals | s | createComputations1to4 | 9.9668 |
-| alien-signals | s | createComputations1to8 | 8.6315 |
-| alien-signals | s | createComputations1to1000 | 13.9181 |
-| alien-signals | s | updateComputations1to1 | 33.2630 |
-| alien-signals | s | updateComputations2to1 | 19.8026 |
-| alien-signals | s | updateComputations4to1 | 13.4175 |
-| alien-signals | s | updateComputations1000to1 | 9.7067 |
-| alien-signals | s | updateComputations1to2 | 24.6316 |
-| alien-signals | s | updateComputations1to4 | 18.9123 |
-| alien-signals | s | updateComputations1to1000 | 16.5464 |
-| alien-signals | dynamic | 10x5 - 2 sources - read 20% (simple component) | 252.0860 |
-| alien-signals | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 197.8619 |
-| alien-signals | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 329.8603 |
-| alien-signals | dynamic | 1000x5 - 25 sources (wide dense) | 624.2902 |
-| alien-signals | dynamic | 5x500 - 3 sources (deep) | 170.0053 |
-| alien-signals | cellx | cellx10 | 0.0858 |
-| alien-signals | cellx | cellx20 | 0.0910 |
-| alien-signals | cellx | cellx30 | 0.1090 |
-| @angular/signals | kairo | avoidablePropagation | 485.5753 |
-| @angular/signals | kairo | broadPropagation | 991.0559 |
-| @angular/signals | kairo | deepPropagation | 276.5100 |
-| @angular/signals | kairo | diamond | 615.2433 |
-| @angular/signals | kairo | mux | 675.7608 |
-| @angular/signals | kairo | repeatedObservers | 78.9395 |
-| @angular/signals | kairo | triangle | 221.3340 |
-| @angular/signals | kairo | unstable | 180.1897 |
-| @angular/signals | mol | molBench | 669.3021 |
-| @angular/signals | s | createDataSignals | 64.3390 |
-| @angular/signals | s | createComputations0to1 | 12.5711 |
-| @angular/signals | s | createComputations1to1 | 89.1151 |
-| @angular/signals | s | createComputations2to1 | 80.9639 |
-| @angular/signals | s | createComputations4to1 | 74.1926 |
-| @angular/signals | s | createComputations1000to1 | 29.4375 |
-| @angular/signals | s | createComputations1to2 | 36.4595 |
-| @angular/signals | s | createComputations1to4 | 31.9202 |
-| @angular/signals | s | createComputations1to8 | 29.3345 |
-| @angular/signals | s | createComputations1to1000 | 21.2783 |
-| @angular/signals | s | updateComputations1to1 | 43.7109 |
-| @angular/signals | s | updateComputations2to1 | 28.3855 |
-| @angular/signals | s | updateComputations4to1 | 21.3590 |
-| @angular/signals | s | updateComputations1000to1 | 7.7756 |
-| @angular/signals | s | updateComputations1to2 | 41.3792 |
-| @angular/signals | s | updateComputations1to4 | 40.6102 |
-| @angular/signals | s | updateComputations1to1000 | 36.5571 |
-| @angular/signals | dynamic | 10x5 - 2 sources - read 20% (simple component) | 967.5339 |
-| @angular/signals | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 527.2554 |
-| @angular/signals | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 1120.3704 |
-| @angular/signals | dynamic | 1000x5 - 25 sources (wide dense) | 1549.4772 |
-| @angular/signals | dynamic | 5x500 - 3 sources (deep) | 444.4802 |
-| @angular/signals | cellx | cellx10 | 0.1647 |
-| @angular/signals | cellx | cellx20 | 0.1626 |
-| @angular/signals | cellx | cellx30 | 0.1933 |
-| MobX | kairo | avoidablePropagation | 707.4360 |
-| MobX | kairo | broadPropagation | 1744.9910 |
-| MobX | kairo | deepPropagation | 576.0347 |
-| MobX | kairo | diamond | 909.9960 |
-| MobX | kairo | mux | 750.5538 |
-| MobX | kairo | repeatedObservers | 74.1473 |
-| MobX | kairo | triangle | 296.5279 |
-| MobX | kairo | unstable | 209.3295 |
-| MobX | mol | molBench | 679.1816 |
-| MobX | s | createDataSignals | 11.6821 |
-| MobX | s | createComputations0to1 | 31.2641 |
-| MobX | s | createComputations1to1 | 90.5267 |
-| MobX | s | createComputations2to1 | 76.5852 |
-| MobX | s | createComputations4to1 | 42.0380 |
-| MobX | s | createComputations1000to1 | 18.9177 |
-| MobX | s | createComputations1to2 | 87.3455 |
-| MobX | s | createComputations1to4 | 69.5159 |
-| MobX | s | createComputations1to8 | 62.9236 |
-| MobX | s | createComputations1to1000 | 61.1303 |
-| MobX | s | updateComputations1to1 | 85.2167 |
-| MobX | s | updateComputations2to1 | 51.1795 |
-| MobX | s | updateComputations4to1 | 29.9094 |
-| MobX | s | updateComputations1000to1 | 7.4768 |
-| MobX | s | updateComputations1to2 | 69.4753 |
-| MobX | s | updateComputations1to4 | 62.2789 |
-| MobX | s | updateComputations1to1000 | 56.0631 |
-| MobX | dynamic | 10x5 - 2 sources - read 20% (simple component) | 1092.0641 |
-| MobX | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 601.0017 |
-| MobX | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 913.9613 |
-| MobX | dynamic | 1000x5 - 25 sources (wide dense) | 1152.2332 |
-| MobX | dynamic | 5x500 - 3 sources (deep) | 560.7362 |
-| MobX | cellx | cellx10 | 0.1965 |
-| MobX | cellx | cellx20 | 0.3531 |
-| MobX | cellx | cellx30 | 0.4683 |
-| $mol_wire | kairo | avoidablePropagation | 492.3693 |
-| $mol_wire | kairo | broadPropagation | 1417.1165 |
-| $mol_wire | kairo | deepPropagation | 399.2566 |
-| $mol_wire | kairo | diamond | 689.1290 |
-| $mol_wire | kairo | mux | 884.5424 |
-| $mol_wire | kairo | repeatedObservers | 124.8365 |
-| $mol_wire | kairo | triangle | 233.0200 |
-| $mol_wire | kairo | unstable | 345.1243 |
-| $mol_wire | mol | molBench | 529.0126 |
-| $mol_wire | s | createDataSignals | 31.1621 |
-| $mol_wire | s | createComputations0to1 | 21.3045 |
-| $mol_wire | s | createComputations1to1 | 139.8469 |
-| $mol_wire | s | createComputations2to1 | 56.3331 |
-| $mol_wire | s | createComputations4to1 | 49.5904 |
-| $mol_wire | s | createComputations1000to1 | 45.3901 |
-| $mol_wire | s | createComputations1to2 | 81.5551 |
-| $mol_wire | s | createComputations1to4 | 47.9574 |
-| $mol_wire | s | createComputations1to8 | 40.4361 |
-| $mol_wire | s | createComputations1to1000 | 35.7025 |
-| $mol_wire | s | updateComputations1to1 | 121.5643 |
-| $mol_wire | s | updateComputations2to1 | 70.4910 |
-| $mol_wire | s | updateComputations4to1 | 42.2628 |
-| $mol_wire | s | updateComputations1000to1 | 12.0445 |
-| $mol_wire | s | updateComputations1to2 | 96.6728 |
-| $mol_wire | s | updateComputations1to4 | 80.1182 |
-| $mol_wire | s | updateComputations1to1000 | 79.0998 |
-| $mol_wire | dynamic | 10x5 - 2 sources - read 20% (simple component) | 839.7467 |
-| $mol_wire | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 430.7626 |
-| $mol_wire | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 875.1623 |
-| $mol_wire | dynamic | 1000x5 - 25 sources (wide dense) | 1124.3489 |
-| $mol_wire | dynamic | 5x500 - 3 sources (deep) | 476.5160 |
-| $mol_wire | cellx | cellx10 | 0.2366 |
-| $mol_wire | cellx | cellx20 | 0.2027 |
-| $mol_wire | cellx | cellx30 | 0.2303 |
-| Oby | kairo | avoidablePropagation | 324.9142 |
-| Oby | kairo | broadPropagation | 727.6248 |
-| Oby | kairo | deepPropagation | 293.8560 |
-| Oby | kairo | diamond | 418.7721 |
-| Oby | kairo | mux | 423.3008 |
-| Oby | kairo | repeatedObservers | 56.1326 |
-| Oby | kairo | triangle | 159.0845 |
-| Oby | kairo | unstable | 95.7123 |
-| Oby | mol | molBench | 784.8777 |
-| Oby | s | createDataSignals | 17.9053 |
-| Oby | s | createComputations0to1 | 44.8125 |
-| Oby | s | createComputations1to1 | 110.9570 |
-| Oby | s | createComputations2to1 | 83.9449 |
-| Oby | s | createComputations4to1 | 58.8393 |
-| Oby | s | createComputations1000to1 | 20.0309 |
-| Oby | s | createComputations1to2 | 83.7563 |
-| Oby | s | createComputations1to4 | 80.7714 |
-| Oby | s | createComputations1to8 | 82.2931 |
-| Oby | s | createComputations1to1000 | 76.5270 |
-| Oby | s | updateComputations1to1 | 56.2025 |
-| Oby | s | updateComputations2to1 | 34.1531 |
-| Oby | s | updateComputations4to1 | 21.6152 |
-| Oby | s | updateComputations1000to1 | 16.8925 |
-| Oby | s | updateComputations1to2 | 44.5889 |
-| Oby | s | updateComputations1to4 | 41.5824 |
-| Oby | s | updateComputations1to1000 | 43.7671 |
-| Oby | dynamic | 10x5 - 2 sources - read 20% (simple component) | 621.0265 |
-| Oby | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 414.6215 |
-| Oby | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 736.6449 |
-| Oby | dynamic | 1000x5 - 25 sources (wide dense) | 960.9591 |
-| Oby | dynamic | 5x500 - 3 sources (deep) | 324.5988 |
-| Oby | cellx | cellx10 | 0.1813 |
-| Oby | cellx | cellx20 | 0.2777 |
-| Oby | cellx | cellx30 | 0.1580 |
-| Pota | kairo | avoidablePropagation | 628.8514 |
-| Pota | kairo | broadPropagation | 797.6422 |
-| Pota | kairo | deepPropagation | 302.3490 |
-| Pota | kairo | diamond | 569.9930 |
-| Pota | kairo | mux | 492.5124 |
-| Pota | kairo | repeatedObservers | 118.4634 |
-| Pota | kairo | triangle | 186.6998 |
-| Pota | kairo | unstable | 173.9781 |
-| Pota | mol | molBench | 788.6336 |
-| Pota | s | createDataSignals | 14.7784 |
-| Pota | s | createComputations0to1 | 15.2552 |
-| Pota | s | createComputations1to1 | 78.4203 |
-| Pota | s | createComputations2to1 | 75.1022 |
-| Pota | s | createComputations4to1 | 75.8698 |
-| Pota | s | createComputations1000to1 | 16.1666 |
-| Pota | s | createComputations1to2 | 83.4971 |
-| Pota | s | createComputations1to4 | 24.0139 |
-| Pota | s | createComputations1to8 | 24.6939 |
-| Pota | s | createComputations1to1000 | 21.0056 |
-| Pota | s | updateComputations1to1 | 122.9629 |
-| Pota | s | updateComputations2to1 | 74.5854 |
-| Pota | s | updateComputations4to1 | 41.9734 |
-| Pota | s | updateComputations1000to1 | 14.2032 |
-| Pota | s | updateComputations1to2 | 85.0489 |
-| Pota | s | updateComputations1to4 | 64.7794 |
-| Pota | s | updateComputations1to1000 | 42.9545 |
-| Pota | dynamic | 10x5 - 2 sources - read 20% (simple component) | 1028.6379 |
-| Pota | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 508.7108 |
-| Pota | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 669.0741 |
-| Pota | dynamic | 1000x5 - 25 sources (wide dense) | 1048.7982 |
-| Pota | dynamic | 5x500 - 3 sources (deep) | 417.4772 |
-| Pota | cellx | cellx10 | 0.1308 |
-| Pota | cellx | cellx20 | 0.2539 |
-| Pota | cellx | cellx30 | 0.1784 |
-| reflex-quant | kairo | avoidablePropagation | 118.3903 |
-| reflex-quant | kairo | broadPropagation | 239.3931 |
-| reflex-quant | kairo | deepPropagation | 93.4230 |
-| reflex-quant | kairo | diamond | 166.7994 |
-| reflex-quant | kairo | mux | 272.6330 |
-| reflex-quant | kairo | repeatedObservers | 20.3442 |
-| reflex-quant | kairo | triangle | 57.8020 |
-| reflex-quant | kairo | unstable | 56.1955 |
-| reflex-quant | mol | molBench | 637.2296 |
-| reflex-quant | s | createDataSignals | 7.4532 |
-| reflex-quant | s | createComputations0to1 | 5.7231 |
-| reflex-quant | s | createComputations1to1 | 15.0318 |
-| reflex-quant | s | createComputations2to1 | 12.0230 |
-| reflex-quant | s | createComputations4to1 | 10.8540 |
-| reflex-quant | s | createComputations1000to1 | 9.3440 |
-| reflex-quant | s | createComputations1to2 | 10.7586 |
-| reflex-quant | s | createComputations1to4 | 9.2528 |
-| reflex-quant | s | createComputations1to8 | 8.0137 |
-| reflex-quant | s | createComputations1to1000 | 8.2266 |
-| reflex-quant | s | updateComputations1to1 | 22.7103 |
-| reflex-quant | s | updateComputations2to1 | 13.6581 |
-| reflex-quant | s | updateComputations4to1 | 9.0297 |
-| reflex-quant | s | updateComputations1000to1 | 2.8023 |
-| reflex-quant | s | updateComputations1to2 | 15.7516 |
-| reflex-quant | s | updateComputations1to4 | 14.2377 |
-| reflex-quant | s | updateComputations1to1000 | 13.5144 |
-| reflex-quant | dynamic | 10x5 - 2 sources - read 20% (simple component) | 210.0392 |
-| reflex-quant | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 157.7719 |
-| reflex-quant | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 235.8891 |
-| reflex-quant | dynamic | 1000x5 - 25 sources (wide dense) | 357.7914 |
-| reflex-quant | dynamic | 5x500 - 3 sources (deep) | 143.3220 |
-| reflex-quant | cellx | cellx10 | 0.0834 |
-| reflex-quant | cellx | cellx20 | 0.0887 |
-| reflex-quant | cellx | cellx30 | 0.0898 |
-| x-reactivity | kairo | avoidablePropagation | 757.3605 |
-| x-reactivity | kairo | broadPropagation | 1597.0681 |
-| x-reactivity | kairo | deepPropagation | 537.4458 |
-| x-reactivity | kairo | diamond | 1070.6690 |
-| x-reactivity | kairo | mux | 547.2367 |
-| x-reactivity | kairo | repeatedObservers | 172.2105 |
-| x-reactivity | kairo | triangle | 366.6206 |
-| x-reactivity | kairo | unstable | 282.9119 |
-| x-reactivity | mol | molBench | 812.3132 |
-| x-reactivity | s | createDataSignals | 14.8163 |
-| x-reactivity | s | createComputations0to1 | 15.8106 |
-| x-reactivity | s | createComputations1to1 | 85.4432 |
-| x-reactivity | s | createComputations2to1 | 69.4275 |
-| x-reactivity | s | createComputations4to1 | 23.0937 |
-| x-reactivity | s | createComputations1000to1 | 18.5082 |
-| x-reactivity | s | createComputations1to2 | 36.4613 |
-| x-reactivity | s | createComputations1to4 | 25.3648 |
-| x-reactivity | s | createComputations1to8 | 24.5357 |
-| x-reactivity | s | createComputations1to1000 | 21.7498 |
-| x-reactivity | s | updateComputations1to1 | 228.0076 |
-| x-reactivity | s | updateComputations2to1 | 127.2327 |
-| x-reactivity | s | updateComputations4to1 | 67.8838 |
-| x-reactivity | s | updateComputations1000to1 | 17.1003 |
-| x-reactivity | s | updateComputations1to2 | 160.3797 |
-| x-reactivity | s | updateComputations1to4 | 116.2674 |
-| x-reactivity | s | updateComputations1to1000 | 78.7178 |
-| x-reactivity | dynamic | 10x5 - 2 sources - read 20% (simple component) | 2772.1023 |
-| x-reactivity | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 686.0132 |
-| x-reactivity | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 1088.4053 |
-| x-reactivity | dynamic | 1000x5 - 25 sources (wide dense) | 1392.2848 |
-| x-reactivity | dynamic | 5x500 - 3 sources (deep) | 493.6133 |
-| x-reactivity | cellx | cellx10 | 0.2844 |
-| x-reactivity | cellx | cellx20 | 0.6333 |
-| x-reactivity | cellx | cellx30 | 0.2500 |
-| Preact Signals | kairo | avoidablePropagation | 179.5904 |
-| Preact Signals | kairo | broadPropagation | 317.3637 |
-| Preact Signals | kairo | deepPropagation | 118.5290 |
-| Preact Signals | kairo | diamond | 264.0588 |
-| Preact Signals | kairo | mux | 311.1101 |
-| Preact Signals | kairo | repeatedObservers | 23.6723 |
-| Preact Signals | kairo | triangle | 89.7571 |
-| Preact Signals | kairo | unstable | 60.2948 |
-| Preact Signals | mol | molBench | 645.8919 |
-| Preact Signals | s | createDataSignals | 9.6451 |
-| Preact Signals | s | createComputations0to1 | 10.0685 |
-| Preact Signals | s | createComputations1to1 | 29.8259 |
-| Preact Signals | s | createComputations2to1 | 19.0194 |
-| Preact Signals | s | createComputations4to1 | 12.7986 |
-| Preact Signals | s | createComputations1000to1 | 13.1951 |
-| Preact Signals | s | createComputations1to2 | 18.4217 |
-| Preact Signals | s | createComputations1to4 | 17.4466 |
-| Preact Signals | s | createComputations1to8 | 15.5152 |
-| Preact Signals | s | createComputations1to1000 | 16.6779 |
-| Preact Signals | s | updateComputations1to1 | 30.8282 |
-| Preact Signals | s | updateComputations2to1 | 20.1627 |
-| Preact Signals | s | updateComputations4to1 | 15.8148 |
-| Preact Signals | s | updateComputations1000to1 | 6.9173 |
-| Preact Signals | s | updateComputations1to2 | 21.0578 |
-| Preact Signals | s | updateComputations1to4 | 18.0283 |
-| Preact Signals | s | updateComputations1to1000 | 15.1093 |
-| Preact Signals | dynamic | 10x5 - 2 sources - read 20% (simple component) | 401.9404 |
-| Preact Signals | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 278.5864 |
-| Preact Signals | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 471.9216 |
-| Preact Signals | dynamic | 1000x5 - 25 sources (wide dense) | 722.7366 |
-| Preact Signals | dynamic | 5x500 - 3 sources (deep) | 231.5250 |
-| Preact Signals | cellx | cellx10 | 0.1398 |
-| Preact Signals | cellx | cellx20 | 0.1308 |
-| Preact Signals | cellx | cellx30 | 0.1872 |
-| TC39 Signals Polyfill | kairo | avoidablePropagation | 707.9062 |
-| TC39 Signals Polyfill | kairo | broadPropagation | 1735.5079 |
-| TC39 Signals Polyfill | kairo | deepPropagation | 454.6336 |
-| TC39 Signals Polyfill | kairo | diamond | 935.4470 |
-| TC39 Signals Polyfill | kairo | mux | 1108.9447 |
-| TC39 Signals Polyfill | kairo | repeatedObservers | 265.6850 |
-| TC39 Signals Polyfill | kairo | triangle | 340.4417 |
-| TC39 Signals Polyfill | kairo | unstable | 1013.9361 |
-| TC39 Signals Polyfill | mol | molBench | 710.4074 |
-| TC39 Signals Polyfill | s | createDataSignals | 25.1637 |
-| TC39 Signals Polyfill | s | createComputations0to1 | 39.5303 |
-| TC39 Signals Polyfill | s | createComputations1to1 | 90.0795 |
-| TC39 Signals Polyfill | s | createComputations2to1 | 52.8019 |
-| TC39 Signals Polyfill | s | createComputations4to1 | 40.8016 |
-| TC39 Signals Polyfill | s | createComputations1000to1 | 27.1926 |
-| TC39 Signals Polyfill | s | createComputations1to2 | 69.4047 |
-| TC39 Signals Polyfill | s | createComputations1to4 | 59.6789 |
-| TC39 Signals Polyfill | s | createComputations1to8 | 58.9062 |
-| TC39 Signals Polyfill | s | createComputations1to1000 | 52.8958 |
-| TC39 Signals Polyfill | s | updateComputations1to1 | 76.3908 |
-| TC39 Signals Polyfill | s | updateComputations2to1 | 47.6918 |
-| TC39 Signals Polyfill | s | updateComputations4to1 | 35.8974 |
-| TC39 Signals Polyfill | s | updateComputations1000to1 | 12.8450 |
-| TC39 Signals Polyfill | s | updateComputations1to2 | 75.5454 |
-| TC39 Signals Polyfill | s | updateComputations1to4 | 56.7544 |
-| TC39 Signals Polyfill | s | updateComputations1to1000 | 48.8207 |
-| TC39 Signals Polyfill | dynamic | 10x5 - 2 sources - read 20% (simple component) | 2445.4169 |
-| TC39 Signals Polyfill | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 794.9067 |
-| TC39 Signals Polyfill | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 15607.9164 |
-| TC39 Signals Polyfill | dynamic | 1000x5 - 25 sources (wide dense) | 10568.7194 |
-| TC39 Signals Polyfill | dynamic | 5x500 - 3 sources (deep) | 626.5788 |
-| TC39 Signals Polyfill | cellx | cellx10 | 0.1453 |
-| TC39 Signals Polyfill | cellx | cellx20 | 0.3124 |
-| TC39 Signals Polyfill | cellx | cellx30 | 0.1400 |
-| SolidJS | kairo | avoidablePropagation | 729.8491 |
-| SolidJS | kairo | broadPropagation | 1560.1864 |
-| SolidJS | kairo | deepPropagation | 627.3828 |
-| SolidJS | kairo | diamond | 979.7842 |
-| SolidJS | kairo | mux | 739.0820 |
-| SolidJS | kairo | repeatedObservers | 125.3229 |
-| SolidJS | kairo | triangle | 290.9335 |
-| SolidJS | kairo | unstable | 185.8957 |
-| SolidJS | mol | molBench | 806.1247 |
-| SolidJS | s | createDataSignals | 12.3991 |
-| SolidJS | s | createComputations0to1 | 13.9461 |
-| SolidJS | s | createComputations1to1 | 75.2488 |
-| SolidJS | s | createComputations2to1 | 66.4609 |
-| SolidJS | s | createComputations4to1 | 47.2659 |
-| SolidJS | s | createComputations1000to1 | 11.6870 |
-| SolidJS | s | createComputations1to2 | 68.1513 |
-| SolidJS | s | createComputations1to4 | 21.6892 |
-| SolidJS | s | createComputations1to8 | 18.0508 |
-| SolidJS | s | createComputations1to1000 | 15.3108 |
-| SolidJS | s | updateComputations1to1 | 141.6423 |
-| SolidJS | s | updateComputations2to1 | 92.6206 |
-| SolidJS | s | updateComputations4to1 | 65.5186 |
-| SolidJS | s | updateComputations1000to1 | 40.5934 |
-| SolidJS | s | updateComputations1to2 | 83.5907 |
-| SolidJS | s | updateComputations1to4 | 70.2879 |
-| SolidJS | s | updateComputations1to1000 | 58.4354 |
-| SolidJS | dynamic | 10x5 - 2 sources - read 20% (simple component) | 2666.8849 |
-| SolidJS | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 853.8811 |
-| SolidJS | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 970.5198 |
-| SolidJS | dynamic | 1000x5 - 25 sources (wide dense) | 1707.8374 |
-| SolidJS | dynamic | 5x500 - 3 sources (deep) | 596.2291 |
-| SolidJS | cellx | cellx10 | 0.1659 |
-| SolidJS | cellx | cellx20 | 0.1794 |
-| SolidJS | cellx | cellx30 | 0.1090 |
-| Svelte v5 | kairo | avoidablePropagation | 1029.9084 |
-| Svelte v5 | kairo | broadPropagation | 1253.3815 |
-| Svelte v5 | kairo | deepPropagation | 504.1409 |
-| Svelte v5 | kairo | diamond | 1036.7905 |
-| Svelte v5 | kairo | mux | 417.9893 |
-| Svelte v5 | kairo | repeatedObservers | 127.5452 |
-| Svelte v5 | kairo | triangle | 331.8655 |
-| Svelte v5 | kairo | unstable | 211.6223 |
-| Svelte v5 | mol | molBench | 694.0259 |
-| Svelte v5 | s | createDataSignals | 8.4978 |
-| Svelte v5 | s | createComputations0to1 | 36.0913 |
-| Svelte v5 | s | createComputations1to1 | 45.8938 |
-| Svelte v5 | s | createComputations2to1 | 28.8359 |
-| Svelte v5 | s | createComputations4to1 | 18.2593 |
-| Svelte v5 | s | createComputations1000to1 | 8.7030 |
-| Svelte v5 | s | createComputations1to2 | 34.3047 |
-| Svelte v5 | s | createComputations1to4 | 31.4242 |
-| Svelte v5 | s | createComputations1to8 | 30.7720 |
-| Svelte v5 | s | createComputations1to1000 | 26.6832 |
-| Svelte v5 | s | updateComputations1to1 | 263.8417 |
-| Svelte v5 | s | updateComputations2to1 | 135.1203 |
-| Svelte v5 | s | updateComputations4to1 | 70.3012 |
-| Svelte v5 | s | updateComputations1000to1 | 6.2610 |
-| Svelte v5 | s | updateComputations1to2 | 148.2388 |
-| Svelte v5 | s | updateComputations1to4 | 91.5803 |
-| Svelte v5 | s | updateComputations1to1000 | 32.5170 |
-| Svelte v5 | dynamic | 10x5 - 2 sources - read 20% (simple component) | 1250.1618 |
-| Svelte v5 | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 26455.1739 |
-| Svelte v5 | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 12605.5247 |
-| Svelte v5 | dynamic | 1000x5 - 25 sources (wide dense) | 5901.7297 |
-| Svelte v5 | dynamic | 5x500 - 3 sources (deep) | 1404.8019 |
-| Svelte v5 | cellx | cellx10 | 0.3505 |
-| Svelte v5 | cellx | cellx20 | 6.8683 |
-| Svelte v5 | cellx | cellx30 | 9.6333 |
-| @amadeus-it-group/tansu | kairo | avoidablePropagation | 449.4775 |
-| @amadeus-it-group/tansu | kairo | broadPropagation | 932.9937 |
-| @amadeus-it-group/tansu | kairo | deepPropagation | 293.4113 |
-| @amadeus-it-group/tansu | kairo | diamond | 464.7654 |
-| @amadeus-it-group/tansu | kairo | mux | 667.4349 |
-| @amadeus-it-group/tansu | kairo | repeatedObservers | 83.4992 |
-| @amadeus-it-group/tansu | kairo | triangle | 147.0503 |
-| @amadeus-it-group/tansu | kairo | unstable | 225.3799 |
-| @amadeus-it-group/tansu | mol | molBench | 677.8256 |
-| @amadeus-it-group/tansu | s | createDataSignals | 17.1989 |
-| @amadeus-it-group/tansu | s | createComputations0to1 | 18.8159 |
-| @amadeus-it-group/tansu | s | createComputations1to1 | 77.7740 |
-| @amadeus-it-group/tansu | s | createComputations2to1 | 47.4480 |
-| @amadeus-it-group/tansu | s | createComputations4to1 | 24.7320 |
-| @amadeus-it-group/tansu | s | createComputations1000to1 | 26.7038 |
-| @amadeus-it-group/tansu | s | createComputations1to2 | 52.0463 |
-| @amadeus-it-group/tansu | s | createComputations1to4 | 42.6722 |
-| @amadeus-it-group/tansu | s | createComputations1to8 | 38.0337 |
-| @amadeus-it-group/tansu | s | createComputations1to1000 | 32.2016 |
-| @amadeus-it-group/tansu | s | updateComputations1to1 | 50.7127 |
-| @amadeus-it-group/tansu | s | updateComputations2to1 | 31.8533 |
-| @amadeus-it-group/tansu | s | updateComputations4to1 | 20.1763 |
-| @amadeus-it-group/tansu | s | updateComputations1000to1 | 9.6970 |
-| @amadeus-it-group/tansu | s | updateComputations1to2 | 44.1404 |
-| @amadeus-it-group/tansu | s | updateComputations1to4 | 41.7710 |
-| @amadeus-it-group/tansu | s | updateComputations1to1000 | 41.4174 |
-| @amadeus-it-group/tansu | dynamic | 10x5 - 2 sources - read 20% (simple component) | 707.3159 |
-| @amadeus-it-group/tansu | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 354.3383 |
-| @amadeus-it-group/tansu | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 785.0654 |
-| @amadeus-it-group/tansu | dynamic | 1000x5 - 25 sources (wide dense) | 930.8070 |
-| @amadeus-it-group/tansu | dynamic | 5x500 - 3 sources (deep) | 348.5678 |
-| @amadeus-it-group/tansu | cellx | cellx10 | 0.2070 |
-| @amadeus-it-group/tansu | cellx | cellx20 | 0.1860 |
-| @amadeus-it-group/tansu | cellx | cellx30 | 0.2536 |
-| @tldraw/state | kairo | avoidablePropagation | 598.8291 |
-| @tldraw/state | kairo | broadPropagation | 1269.6373 |
-| @tldraw/state | kairo | deepPropagation | 418.8276 |
-| @tldraw/state | kairo | diamond | 793.7081 |
-| @tldraw/state | kairo | mux | 784.8972 |
-| @tldraw/state | kairo | repeatedObservers | 99.1131 |
-| @tldraw/state | kairo | triangle | 340.5458 |
-| @tldraw/state | kairo | unstable | 171.5332 |
-| @tldraw/state | mol | molBench | 690.3808 |
-| @tldraw/state | s | createDataSignals | 13.4141 |
-| @tldraw/state | s | createComputations0to1 | 11.6158 |
-| @tldraw/state | s | createComputations1to1 | 30.6803 |
-| @tldraw/state | s | createComputations2to1 | 28.2926 |
-| @tldraw/state | s | createComputations4to1 | 13.6444 |
-| @tldraw/state | s | createComputations1000to1 | 23.0675 |
-| @tldraw/state | s | createComputations1to2 | 27.7014 |
-| @tldraw/state | s | createComputations1to4 | 25.9813 |
-| @tldraw/state | s | createComputations1to8 | 26.9133 |
-| @tldraw/state | s | createComputations1to1000 | 24.1151 |
-| @tldraw/state | s | updateComputations1to1 | 123.6827 |
-| @tldraw/state | s | updateComputations2to1 | 73.6728 |
-| @tldraw/state | s | updateComputations4to1 | 50.1327 |
-| @tldraw/state | s | updateComputations1000to1 | 28.3539 |
-| @tldraw/state | s | updateComputations1to2 | 96.3440 |
-| @tldraw/state | s | updateComputations1to4 | 79.4085 |
-| @tldraw/state | s | updateComputations1to1000 | 61.8295 |
-| @tldraw/state | dynamic | 10x5 - 2 sources - read 20% (simple component) | 1139.5407 |
-| @tldraw/state | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 593.4732 |
-| @tldraw/state | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 5266.8113 |
-| @tldraw/state | dynamic | 1000x5 - 25 sources (wide dense) | 4748.3246 |
-| @tldraw/state | dynamic | 5x500 - 3 sources (deep) | 459.7354 |
-| @tldraw/state | cellx | cellx10 | 0.1688 |
-| @tldraw/state | cellx | cellx20 | 0.3317 |
-| @tldraw/state | cellx | cellx30 | 0.2161 |
-| uSignal | kairo | avoidablePropagation | 822.2919 |
-| uSignal | kairo | broadPropagation | 1041.5319 |
-| uSignal | kairo | deepPropagation | 332.6646 |
-| uSignal | kairo | diamond | 539.7089 |
-| uSignal | kairo | mux | 842.4127 |
-| uSignal | kairo | repeatedObservers | 73.2890 |
-| uSignal | kairo | triangle | 208.9639 |
-| uSignal | kairo | unstable | 99.2578 |
-| uSignal | mol | molBench | 911.6657 |
-| uSignal | s | createDataSignals | 13.2734 |
-| uSignal | s | createComputations0to1 | 13.8830 |
-| uSignal | s | createComputations1to1 | 65.3254 |
-| uSignal | s | createComputations2to1 | 30.4014 |
-| uSignal | s | createComputations4to1 | 20.8779 |
-| uSignal | s | createComputations1000to1 | 19.1765 |
-| uSignal | s | createComputations1to2 | 59.2550 |
-| uSignal | s | createComputations1to4 | 37.6420 |
-| uSignal | s | createComputations1to8 | 36.4627 |
-| uSignal | s | createComputations1to1000 | 19.8711 |
-| uSignal | s | updateComputations1to1 | 57.6642 |
-| uSignal | s | updateComputations2to1 | 36.8959 |
-| uSignal | s | updateComputations4to1 | 23.1115 |
-| uSignal | s | updateComputations1000to1 | 14.5954 |
-| uSignal | s | updateComputations1to2 | 47.1136 |
-| uSignal | s | updateComputations1to4 | 43.0981 |
-| uSignal | s | updateComputations1to1000 | 47.3280 |
-| uSignal | dynamic | 10x5 - 2 sources - read 20% (simple component) | 648.4864 |
-| uSignal | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 586.2965 |
-| uSignal | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 681.3516 |
-| uSignal | dynamic | 1000x5 - 25 sources (wide dense) | 1507.5628 |
-| uSignal | dynamic | 5x500 - 3 sources (deep) | 377.8480 |
-| uSignal | cellx | cellx10 | 0.1446 |
-| uSignal | cellx | cellx20 | 0.2257 |
-| uSignal | cellx | cellx30 | 0.1903 |
-| @vue/reactivity | kairo | avoidablePropagation | 455.9296 |
-| @vue/reactivity | kairo | broadPropagation | 733.4384 |
-| @vue/reactivity | kairo | deepPropagation | 206.5656 |
-| @vue/reactivity | kairo | diamond | 440.0949 |
-| @vue/reactivity | kairo | mux | 538.5707 |
-| @vue/reactivity | kairo | repeatedObservers | 40.5037 |
-| @vue/reactivity | kairo | triangle | 128.9567 |
-| @vue/reactivity | kairo | unstable | 91.1157 |
-| @vue/reactivity | mol | molBench | 651.2389 |
-| @vue/reactivity | s | createDataSignals | 12.6231 |
-| @vue/reactivity | s | createComputations0to1 | 8.9238 |
-| @vue/reactivity | s | createComputations1to1 | 27.1557 |
-| @vue/reactivity | s | createComputations2to1 | 24.7567 |
-| @vue/reactivity | s | createComputations4to1 | 15.5108 |
-| @vue/reactivity | s | createComputations1000to1 | 17.4963 |
-| @vue/reactivity | s | createComputations1to2 | 22.7195 |
-| @vue/reactivity | s | createComputations1to4 | 20.4606 |
-| @vue/reactivity | s | createComputations1to8 | 17.8053 |
-| @vue/reactivity | s | createComputations1to1000 | 18.5387 |
-| @vue/reactivity | s | updateComputations1to1 | 35.8863 |
-| @vue/reactivity | s | updateComputations2to1 | 23.4791 |
-| @vue/reactivity | s | updateComputations4to1 | 16.6794 |
-| @vue/reactivity | s | updateComputations1000to1 | 10.3445 |
-| @vue/reactivity | s | updateComputations1to2 | 26.5144 |
-| @vue/reactivity | s | updateComputations1to4 | 25.2987 |
-| @vue/reactivity | s | updateComputations1to1000 | 23.1927 |
-| @vue/reactivity | dynamic | 10x5 - 2 sources - read 20% (simple component) | 563.8681 |
-| @vue/reactivity | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 334.6798 |
-| @vue/reactivity | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 602.8722 |
-| @vue/reactivity | dynamic | 1000x5 - 25 sources (wide dense) | 930.8600 |
-| @vue/reactivity | dynamic | 5x500 - 3 sources (deep) | 321.6927 |
-| @vue/reactivity | cellx | cellx10 | 0.1780 |
-| @vue/reactivity | cellx | cellx20 | 0.2479 |
-| @vue/reactivity | cellx | cellx30 | 0.2455 |
-| @pravosleva/reactive-engine | kairo | avoidablePropagation | 424.7194 |
-| @pravosleva/reactive-engine | kairo | broadPropagation | 486.2578 |
-| @pravosleva/reactive-engine | kairo | deepPropagation | 169.4256 |
-| @pravosleva/reactive-engine | kairo | diamond | 337.9418 |
-| @pravosleva/reactive-engine | kairo | mux | 423.2470 |
-| @pravosleva/reactive-engine | kairo | repeatedObservers | 44.4495 |
-| @pravosleva/reactive-engine | kairo | triangle | 107.0024 |
-| @pravosleva/reactive-engine | kairo | unstable | 88.3385 |
-| @pravosleva/reactive-engine | mol | molBench | 717.6407 |
-| @pravosleva/reactive-engine | s | createDataSignals | 15.0035 |
-| @pravosleva/reactive-engine | s | createComputations0to1 | 39.0102 |
-| @pravosleva/reactive-engine | s | createComputations1to1 | 65.0997 |
-| @pravosleva/reactive-engine | s | createComputations2to1 | 43.2539 |
-| @pravosleva/reactive-engine | s | createComputations4to1 | 34.4494 |
-| @pravosleva/reactive-engine | s | createComputations1000to1 | 154.0692 |
-| @pravosleva/reactive-engine | s | createComputations1to2 | 56.9455 |
-| @pravosleva/reactive-engine | s | createComputations1to4 | 52.5687 |
-| @pravosleva/reactive-engine | s | createComputations1to8 | 51.3143 |
-| @pravosleva/reactive-engine | s | createComputations1to1000 | 48.5457 |
-| @pravosleva/reactive-engine | s | updateComputations1to1 | 74.1785 |
-| @pravosleva/reactive-engine | s | updateComputations2to1 | 40.5226 |
-| @pravosleva/reactive-engine | s | updateComputations4to1 | 22.2885 |
-| @pravosleva/reactive-engine | s | updateComputations1000to1 | 4.1660 |
-| @pravosleva/reactive-engine | s | updateComputations1to2 | 46.2186 |
-| @pravosleva/reactive-engine | s | updateComputations1to4 | 32.2966 |
-| @pravosleva/reactive-engine | s | updateComputations1to1000 | 20.1377 |
-| @pravosleva/reactive-engine | dynamic | 10x5 - 2 sources - read 20% (simple component) | 503.9035 |
-| @pravosleva/reactive-engine | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 221.6556 |
-| @pravosleva/reactive-engine | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 424.5972 |
-| @pravosleva/reactive-engine | dynamic | 1000x5 - 25 sources (wide dense) | 603.1839 |
-| @pravosleva/reactive-engine | dynamic | 5x500 - 3 sources (deep) | 227.3596 |
-| @pravosleva/reactive-engine | cellx | cellx10 | 0.1034 |
-| @pravosleva/reactive-engine | cellx | cellx20 | 0.1415 |
-| @pravosleva/reactive-engine | cellx | cellx30 | 0.1730 |
+| alien-signals | kairo | avoidablePropagation | 95.3891 |
+| alien-signals | kairo | broadPropagation | 233.7072 |
+| alien-signals | kairo | deepPropagation | 70.7146 |
+| alien-signals | kairo | diamond | 129.4377 |
+| alien-signals | kairo | mux | 223.0087 |
+| alien-signals | kairo | repeatedObservers | 14.5474 |
+| alien-signals | kairo | triangle | 49.1169 |
+| alien-signals | kairo | unstable | 47.4931 |
+| alien-signals | mol | molBench | 518.4617 |
+| alien-signals | s | createDataSignals | 6.1955 |
+| alien-signals | s | createComputations0to1 | 4.0176 |
+| alien-signals | s | createComputations1to1 | 11.1879 |
+| alien-signals | s | createComputations2to1 | 9.6422 |
+| alien-signals | s | createComputations4to1 | 8.9234 |
+| alien-signals | s | createComputations1000to1 | 7.7849 |
+| alien-signals | s | createComputations1to2 | 8.8466 |
+| alien-signals | s | createComputations1to4 | 7.6926 |
+| alien-signals | s | createComputations1to8 | 6.9109 |
+| alien-signals | s | createComputations1to1000 | 6.8102 |
+| alien-signals | s | updateComputations1to1 | 23.1641 |
+| alien-signals | s | updateComputations2to1 | 14.6455 |
+| alien-signals | s | updateComputations4to1 | 9.2665 |
+| alien-signals | s | updateComputations1000to1 | 4.1380 |
+| alien-signals | s | updateComputations1to2 | 15.6222 |
+| alien-signals | s | updateComputations1to4 | 13.4543 |
+| alien-signals | s | updateComputations1to1000 | 12.3923 |
+| alien-signals | dynamic | 10x5 - 2 sources - read 20% (simple component) | 176.0352 |
+| alien-signals | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 155.4741 |
+| alien-signals | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 251.0138 |
+| alien-signals | dynamic | 1000x5 - 25 sources (wide dense) | 488.5729 |
+| alien-signals | dynamic | 5x500 - 3 sources (deep) | 130.1960 |
+| alien-signals | cellx | cellx10 | 0.0500 |
+| alien-signals | cellx | cellx20 | 0.0712 |
+| alien-signals | cellx | cellx30 | 0.0744 |
+| @angular/signals | kairo | avoidablePropagation | 332.0811 |
+| @angular/signals | kairo | broadPropagation | 696.2291 |
+| @angular/signals | kairo | deepPropagation | 227.7091 |
+| @angular/signals | kairo | diamond | 431.4929 |
+| @angular/signals | kairo | mux | 503.6312 |
+| @angular/signals | kairo | repeatedObservers | 55.7507 |
+| @angular/signals | kairo | triangle | 162.4053 |
+| @angular/signals | kairo | unstable | 136.4700 |
+| @angular/signals | mol | molBench | 533.8906 |
+| @angular/signals | s | createDataSignals | 61.8374 |
+| @angular/signals | s | createComputations0to1 | 10.5000 |
+| @angular/signals | s | createComputations1to1 | 72.1112 |
+| @angular/signals | s | createComputations2to1 | 67.9597 |
+| @angular/signals | s | createComputations4to1 | 63.1823 |
+| @angular/signals | s | createComputations1000to1 | 60.5539 |
+| @angular/signals | s | createComputations1to2 | 29.6869 |
+| @angular/signals | s | createComputations1to4 | 25.0139 |
+| @angular/signals | s | createComputations1to8 | 17.9483 |
+| @angular/signals | s | createComputations1to1000 | 15.1567 |
+| @angular/signals | s | updateComputations1to1 | 33.9394 |
+| @angular/signals | s | updateComputations2to1 | 22.5982 |
+| @angular/signals | s | updateComputations4to1 | 13.0886 |
+| @angular/signals | s | updateComputations1000to1 | 5.9662 |
+| @angular/signals | s | updateComputations1to2 | 33.2282 |
+| @angular/signals | s | updateComputations1to4 | 29.2187 |
+| @angular/signals | s | updateComputations1to1000 | 28.6302 |
+| @angular/signals | dynamic | 10x5 - 2 sources - read 20% (simple component) | 729.3706 |
+| @angular/signals | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 417.4780 |
+| @angular/signals | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 822.1058 |
+| @angular/signals | dynamic | 1000x5 - 25 sources (wide dense) | 1320.2442 |
+| @angular/signals | dynamic | 5x500 - 3 sources (deep) | 357.7117 |
+| @angular/signals | cellx | cellx10 | 0.1154 |
+| @angular/signals | cellx | cellx20 | 0.1418 |
+| @angular/signals | cellx | cellx30 | 0.1817 |
+| MobX | kairo | avoidablePropagation | 465.0659 |
+| MobX | kairo | broadPropagation | 1131.7129 |
+| MobX | kairo | deepPropagation | 478.2073 |
+| MobX | kairo | diamond | 636.1560 |
+| MobX | kairo | mux | 527.6938 |
+| MobX | kairo | repeatedObservers | 50.6340 |
+| MobX | kairo | triangle | 218.0114 |
+| MobX | kairo | unstable | 136.0683 |
+| MobX | mol | molBench | 540.0356 |
+| MobX | s | createDataSignals | 9.8259 |
+| MobX | s | createComputations0to1 | 22.1953 |
+| MobX | s | createComputations1to1 | 68.9731 |
+| MobX | s | createComputations2to1 | 54.4099 |
+| MobX | s | createComputations4to1 | 26.7490 |
+| MobX | s | createComputations1000to1 | 12.3466 |
+| MobX | s | createComputations1to2 | 61.4371 |
+| MobX | s | createComputations1to4 | 49.2678 |
+| MobX | s | createComputations1to8 | 48.8396 |
+| MobX | s | createComputations1to1000 | 49.5791 |
+| MobX | s | updateComputations1to1 | 56.5224 |
+| MobX | s | updateComputations2to1 | 32.0554 |
+| MobX | s | updateComputations4to1 | 19.2395 |
+| MobX | s | updateComputations1000to1 | 6.5394 |
+| MobX | s | updateComputations1to2 | 46.8157 |
+| MobX | s | updateComputations1to4 | 44.6977 |
+| MobX | s | updateComputations1to1000 | 42.3626 |
+| MobX | dynamic | 10x5 - 2 sources - read 20% (simple component) | 766.2164 |
+| MobX | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 452.4073 |
+| MobX | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 682.2733 |
+| MobX | dynamic | 1000x5 - 25 sources (wide dense) | 935.9349 |
+| MobX | dynamic | 5x500 - 3 sources (deep) | 397.1197 |
+| MobX | cellx | cellx10 | 0.1387 |
+| MobX | cellx | cellx20 | 0.2164 |
+| MobX | cellx | cellx30 | 0.2897 |
+| $mol_wire | kairo | avoidablePropagation | 336.6249 |
+| $mol_wire | kairo | broadPropagation | 983.6454 |
+| $mol_wire | kairo | deepPropagation | 301.0865 |
+| $mol_wire | kairo | diamond | 463.3626 |
+| $mol_wire | kairo | mux | 641.6946 |
+| $mol_wire | kairo | repeatedObservers | 88.7899 |
+| $mol_wire | kairo | triangle | 156.0811 |
+| $mol_wire | kairo | unstable | 271.5483 |
+| $mol_wire | mol | molBench | 415.4007 |
+| $mol_wire | s | createDataSignals | 23.9466 |
+| $mol_wire | s | createComputations0to1 | 15.5826 |
+| $mol_wire | s | createComputations1to1 | 114.5369 |
+| $mol_wire | s | createComputations2to1 | 40.9679 |
+| $mol_wire | s | createComputations4to1 | 37.9845 |
+| $mol_wire | s | createComputations1000to1 | 28.3158 |
+| $mol_wire | s | createComputations1to2 | 66.9738 |
+| $mol_wire | s | createComputations1to4 | 29.5468 |
+| $mol_wire | s | createComputations1to8 | 25.2587 |
+| $mol_wire | s | createComputations1to1000 | 24.0335 |
+| $mol_wire | s | updateComputations1to1 | 85.0854 |
+| $mol_wire | s | updateComputations2to1 | 46.9607 |
+| $mol_wire | s | updateComputations4to1 | 30.9112 |
+| $mol_wire | s | updateComputations1000to1 | 9.4960 |
+| $mol_wire | s | updateComputations1to2 | 68.6678 |
+| $mol_wire | s | updateComputations1to4 | 58.4916 |
+| $mol_wire | s | updateComputations1to1000 | 57.7890 |
+| $mol_wire | dynamic | 10x5 - 2 sources - read 20% (simple component) | 544.1105 |
+| $mol_wire | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 316.4379 |
+| $mol_wire | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 558.0413 |
+| $mol_wire | dynamic | 1000x5 - 25 sources (wide dense) | 695.7248 |
+| $mol_wire | dynamic | 5x500 - 3 sources (deep) | 285.4344 |
+| $mol_wire | cellx | cellx10 | 0.1535 |
+| $mol_wire | cellx | cellx20 | 0.1384 |
+| $mol_wire | cellx | cellx30 | 0.1784 |
+| Oby | kairo | avoidablePropagation | 206.7629 |
+| Oby | kairo | broadPropagation | 520.4356 |
+| Oby | kairo | deepPropagation | 242.0424 |
+| Oby | kairo | diamond | 311.0189 |
+| Oby | kairo | mux | 346.5356 |
+| Oby | kairo | repeatedObservers | 37.2008 |
+| Oby | kairo | triangle | 119.3812 |
+| Oby | kairo | unstable | 68.7987 |
+| Oby | mol | molBench | 629.7882 |
+| Oby | s | createDataSignals | 13.0956 |
+| Oby | s | createComputations0to1 | 39.3412 |
+| Oby | s | createComputations1to1 | 105.8705 |
+| Oby | s | createComputations2to1 | 74.9199 |
+| Oby | s | createComputations4to1 | 50.4560 |
+| Oby | s | createComputations1000to1 | 16.2008 |
+| Oby | s | createComputations1to2 | 82.2637 |
+| Oby | s | createComputations1to4 | 65.7619 |
+| Oby | s | createComputations1to8 | 71.0870 |
+| Oby | s | createComputations1to1000 | 62.8144 |
+| Oby | s | updateComputations1to1 | 38.1772 |
+| Oby | s | updateComputations2to1 | 24.9491 |
+| Oby | s | updateComputations4to1 | 16.2588 |
+| Oby | s | updateComputations1000to1 | 14.0850 |
+| Oby | s | updateComputations1to2 | 34.4362 |
+| Oby | s | updateComputations1to4 | 31.5816 |
+| Oby | s | updateComputations1to1000 | 32.9789 |
+| Oby | dynamic | 10x5 - 2 sources - read 20% (simple component) | 470.8002 |
+| Oby | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 358.3907 |
+| Oby | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 576.5920 |
+| Oby | dynamic | 1000x5 - 25 sources (wide dense) | 826.3324 |
+| Oby | dynamic | 5x500 - 3 sources (deep) | 275.4767 |
+| Oby | cellx | cellx10 | 0.1430 |
+| Oby | cellx | cellx20 | 0.1856 |
+| Oby | cellx | cellx30 | 0.1425 |
+| Pota | kairo | avoidablePropagation | 447.2486 |
+| Pota | kairo | broadPropagation | 625.2425 |
+| Pota | kairo | deepPropagation | 272.2122 |
+| Pota | kairo | diamond | 406.1440 |
+| Pota | kairo | mux | 385.8708 |
+| Pota | kairo | repeatedObservers | 86.9508 |
+| Pota | kairo | triangle | 134.4272 |
+| Pota | kairo | unstable | 123.1283 |
+| Pota | mol | molBench | 632.5971 |
+| Pota | s | createDataSignals | 13.0540 |
+| Pota | s | createComputations0to1 | 11.3003 |
+| Pota | s | createComputations1to1 | 69.3509 |
+| Pota | s | createComputations2to1 | 64.7149 |
+| Pota | s | createComputations4to1 | 64.2398 |
+| Pota | s | createComputations1000to1 | 15.1622 |
+| Pota | s | createComputations1to2 | 70.7253 |
+| Pota | s | createComputations1to4 | 19.5288 |
+| Pota | s | createComputations1to8 | 19.1936 |
+| Pota | s | createComputations1to1000 | 14.4739 |
+| Pota | s | updateComputations1to1 | 81.8063 |
+| Pota | s | updateComputations2to1 | 48.0073 |
+| Pota | s | updateComputations4to1 | 29.9468 |
+| Pota | s | updateComputations1000to1 | 11.2816 |
+| Pota | s | updateComputations1to2 | 57.6914 |
+| Pota | s | updateComputations1to4 | 44.9954 |
+| Pota | s | updateComputations1to1000 | 36.2263 |
+| Pota | dynamic | 10x5 - 2 sources - read 20% (simple component) | 756.1943 |
+| Pota | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 377.6238 |
+| Pota | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 477.2174 |
+| Pota | dynamic | 1000x5 - 25 sources (wide dense) | 831.0741 |
+| Pota | dynamic | 5x500 - 3 sources (deep) | 321.4190 |
+| Pota | cellx | cellx10 | 0.0953 |
+| Pota | cellx | cellx20 | 0.0934 |
+| Pota | cellx | cellx30 | 0.0591 |
+| reflex-quant | kairo | avoidablePropagation | 93.3470 |
+| reflex-quant | kairo | broadPropagation | 188.8129 |
+| reflex-quant | kairo | deepPropagation | 77.7161 |
+| reflex-quant | kairo | diamond | 106.9674 |
+| reflex-quant | kairo | mux | 213.0638 |
+| reflex-quant | kairo | repeatedObservers | 14.8163 |
+| reflex-quant | kairo | triangle | 42.3207 |
+| reflex-quant | kairo | unstable | 37.9745 |
+| reflex-quant | mol | molBench | 512.0969 |
+| reflex-quant | s | createDataSignals | 6.0796 |
+| reflex-quant | s | createComputations0to1 | 4.4231 |
+| reflex-quant | s | createComputations1to1 | 12.5443 |
+| reflex-quant | s | createComputations2to1 | 10.2337 |
+| reflex-quant | s | createComputations4to1 | 9.2623 |
+| reflex-quant | s | createComputations1000to1 | 8.0221 |
+| reflex-quant | s | createComputations1to2 | 8.8785 |
+| reflex-quant | s | createComputations1to4 | 7.2729 |
+| reflex-quant | s | createComputations1to8 | 6.3748 |
+| reflex-quant | s | createComputations1to1000 | 6.2338 |
+| reflex-quant | s | updateComputations1to1 | 17.9861 |
+| reflex-quant | s | updateComputations2to1 | 10.9306 |
+| reflex-quant | s | updateComputations4to1 | 7.1793 |
+| reflex-quant | s | updateComputations1000to1 | 2.2756 |
+| reflex-quant | s | updateComputations1to2 | 12.6044 |
+| reflex-quant | s | updateComputations1to4 | 11.3789 |
+| reflex-quant | s | updateComputations1to1000 | 10.9502 |
+| reflex-quant | dynamic | 10x5 - 2 sources - read 20% (simple component) | 164.0100 |
+| reflex-quant | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 123.4717 |
+| reflex-quant | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 174.1088 |
+| reflex-quant | dynamic | 1000x5 - 25 sources (wide dense) | 278.2414 |
+| reflex-quant | dynamic | 5x500 - 3 sources (deep) | 112.9570 |
+| reflex-quant | cellx | cellx10 | 0.0566 |
+| reflex-quant | cellx | cellx20 | 0.0512 |
+| reflex-quant | cellx | cellx30 | 0.0618 |
+| x-reactivity | kairo | avoidablePropagation | 553.0679 |
+| x-reactivity | kairo | broadPropagation | 1025.3439 |
+| x-reactivity | kairo | deepPropagation | 344.5871 |
+| x-reactivity | kairo | diamond | 782.8493 |
+| x-reactivity | kairo | mux | 387.4900 |
+| x-reactivity | kairo | repeatedObservers | 129.4681 |
+| x-reactivity | kairo | triangle | 299.2163 |
+| x-reactivity | kairo | unstable | 219.1795 |
+| x-reactivity | mol | molBench | 653.8118 |
+| x-reactivity | s | createDataSignals | 12.5673 |
+| x-reactivity | s | createComputations0to1 | 10.9662 |
+| x-reactivity | s | createComputations1to1 | 74.8263 |
+| x-reactivity | s | createComputations2to1 | 62.2650 |
+| x-reactivity | s | createComputations4to1 | 18.7033 |
+| x-reactivity | s | createComputations1000to1 | 13.7974 |
+| x-reactivity | s | createComputations1to2 | 28.4763 |
+| x-reactivity | s | createComputations1to4 | 17.9642 |
+| x-reactivity | s | createComputations1to8 | 19.6135 |
+| x-reactivity | s | createComputations1to1000 | 16.6670 |
+| x-reactivity | s | updateComputations1to1 | 160.9096 |
+| x-reactivity | s | updateComputations2to1 | 90.1692 |
+| x-reactivity | s | updateComputations4to1 | 48.3790 |
+| x-reactivity | s | updateComputations1000to1 | 13.4048 |
+| x-reactivity | s | updateComputations1to2 | 118.7178 |
+| x-reactivity | s | updateComputations1to4 | 82.6552 |
+| x-reactivity | s | updateComputations1to1000 | 59.0272 |
+| x-reactivity | dynamic | 10x5 - 2 sources - read 20% (simple component) | 1925.1886 |
+| x-reactivity | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 483.0327 |
+| x-reactivity | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 771.4090 |
+| x-reactivity | dynamic | 1000x5 - 25 sources (wide dense) | 1138.7808 |
+| x-reactivity | dynamic | 5x500 - 3 sources (deep) | 346.2243 |
+| x-reactivity | cellx | cellx10 | 0.2381 |
+| x-reactivity | cellx | cellx20 | 0.3017 |
+| x-reactivity | cellx | cellx30 | 0.3209 |
+| Preact Signals | kairo | avoidablePropagation | 120.4715 |
+| Preact Signals | kairo | broadPropagation | 232.3712 |
+| Preact Signals | kairo | deepPropagation | 98.4546 |
+| Preact Signals | kairo | diamond | 176.3530 |
+| Preact Signals | kairo | mux | 253.4811 |
+| Preact Signals | kairo | repeatedObservers | 17.3099 |
+| Preact Signals | kairo | triangle | 67.0727 |
+| Preact Signals | kairo | unstable | 40.3876 |
+| Preact Signals | mol | molBench | 516.9487 |
+| Preact Signals | s | createDataSignals | 7.3235 |
+| Preact Signals | s | createComputations0to1 | 7.9250 |
+| Preact Signals | s | createComputations1to1 | 26.7706 |
+| Preact Signals | s | createComputations2to1 | 10.2356 |
+| Preact Signals | s | createComputations4to1 | 14.3286 |
+| Preact Signals | s | createComputations1000to1 | 10.2264 |
+| Preact Signals | s | createComputations1to2 | 14.4459 |
+| Preact Signals | s | createComputations1to4 | 13.0170 |
+| Preact Signals | s | createComputations1to8 | 13.2179 |
+| Preact Signals | s | createComputations1to1000 | 5.3516 |
+| Preact Signals | s | updateComputations1to1 | 24.5173 |
+| Preact Signals | s | updateComputations2to1 | 16.2880 |
+| Preact Signals | s | updateComputations4to1 | 11.2230 |
+| Preact Signals | s | updateComputations1000to1 | 5.5001 |
+| Preact Signals | s | updateComputations1to2 | 17.2060 |
+| Preact Signals | s | updateComputations1to4 | 14.6418 |
+| Preact Signals | s | updateComputations1to1000 | 12.6794 |
+| Preact Signals | dynamic | 10x5 - 2 sources - read 20% (simple component) | 282.8949 |
+| Preact Signals | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 223.7164 |
+| Preact Signals | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 316.5999 |
+| Preact Signals | dynamic | 1000x5 - 25 sources (wide dense) | 586.6034 |
+| Preact Signals | dynamic | 5x500 - 3 sources (deep) | 190.5178 |
+| Preact Signals | cellx | cellx10 | 0.0964 |
+| Preact Signals | cellx | cellx20 | 0.0998 |
+| Preact Signals | cellx | cellx30 | 0.0598 |
+| TC39 Signals Polyfill | kairo | avoidablePropagation | 450.8698 |
+| TC39 Signals Polyfill | kairo | broadPropagation | 1102.6591 |
+| TC39 Signals Polyfill | kairo | deepPropagation | 355.3627 |
+| TC39 Signals Polyfill | kairo | diamond | 691.2867 |
+| TC39 Signals Polyfill | kairo | mux | 800.7125 |
+| TC39 Signals Polyfill | kairo | repeatedObservers | 207.1226 |
+| TC39 Signals Polyfill | kairo | triangle | 259.3083 |
+| TC39 Signals Polyfill | kairo | unstable | 727.0411 |
+| TC39 Signals Polyfill | mol | molBench | 561.1867 |
+| TC39 Signals Polyfill | s | createDataSignals | 18.6702 |
+| TC39 Signals Polyfill | s | createComputations0to1 | 28.3281 |
+| TC39 Signals Polyfill | s | createComputations1to1 | 69.3133 |
+| TC39 Signals Polyfill | s | createComputations2to1 | 43.3245 |
+| TC39 Signals Polyfill | s | createComputations4to1 | 31.5997 |
+| TC39 Signals Polyfill | s | createComputations1000to1 | 23.0522 |
+| TC39 Signals Polyfill | s | createComputations1to2 | 52.6713 |
+| TC39 Signals Polyfill | s | createComputations1to4 | 47.2897 |
+| TC39 Signals Polyfill | s | createComputations1to8 | 45.8810 |
+| TC39 Signals Polyfill | s | createComputations1to1000 | 38.2429 |
+| TC39 Signals Polyfill | s | updateComputations1to1 | 55.9067 |
+| TC39 Signals Polyfill | s | updateComputations2to1 | 34.9884 |
+| TC39 Signals Polyfill | s | updateComputations4to1 | 23.4809 |
+| TC39 Signals Polyfill | s | updateComputations1000to1 | 9.4747 |
+| TC39 Signals Polyfill | s | updateComputations1to2 | 47.5267 |
+| TC39 Signals Polyfill | s | updateComputations1to4 | 40.0241 |
+| TC39 Signals Polyfill | s | updateComputations1to1000 | 40.5106 |
+| TC39 Signals Polyfill | dynamic | 10x5 - 2 sources - read 20% (simple component) | 1882.5041 |
+| TC39 Signals Polyfill | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 629.4120 |
+| TC39 Signals Polyfill | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 13836.5742 |
+| TC39 Signals Polyfill | dynamic | 1000x5 - 25 sources (wide dense) | 9417.3828 |
+| TC39 Signals Polyfill | dynamic | 5x500 - 3 sources (deep) | 477.4108 |
+| TC39 Signals Polyfill | cellx | cellx10 | 0.1348 |
+| TC39 Signals Polyfill | cellx | cellx20 | 0.2065 |
+| TC39 Signals Polyfill | cellx | cellx30 | 0.1721 |
+| SolidJS | kairo | avoidablePropagation | 472.1639 |
+| SolidJS | kairo | broadPropagation | 1001.9094 |
+| SolidJS | kairo | deepPropagation | 418.3164 |
+| SolidJS | kairo | diamond | 682.5636 |
+| SolidJS | kairo | mux | 563.4575 |
+| SolidJS | kairo | repeatedObservers | 85.0815 |
+| SolidJS | kairo | triangle | 209.9044 |
+| SolidJS | kairo | unstable | 130.0501 |
+| SolidJS | mol | molBench | 633.7142 |
+| SolidJS | s | createDataSignals | 9.3237 |
+| SolidJS | s | createComputations0to1 | 9.9126 |
+| SolidJS | s | createComputations1to1 | 67.0727 |
+| SolidJS | s | createComputations2to1 | 61.8629 |
+| SolidJS | s | createComputations4to1 | 41.9467 |
+| SolidJS | s | createComputations1000to1 | 10.4840 |
+| SolidJS | s | createComputations1to2 | 59.8135 |
+| SolidJS | s | createComputations1to4 | 15.3648 |
+| SolidJS | s | createComputations1to8 | 13.4653 |
+| SolidJS | s | createComputations1to1000 | 12.6923 |
+| SolidJS | s | updateComputations1to1 | 80.3760 |
+| SolidJS | s | updateComputations2to1 | 57.1891 |
+| SolidJS | s | updateComputations4to1 | 44.7947 |
+| SolidJS | s | updateComputations1000to1 | 34.7070 |
+| SolidJS | s | updateComputations1to2 | 52.5338 |
+| SolidJS | s | updateComputations1to4 | 46.5189 |
+| SolidJS | s | updateComputations1to1000 | 45.9462 |
+| SolidJS | dynamic | 10x5 - 2 sources - read 20% (simple component) | 1904.0730 |
+| SolidJS | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 651.6768 |
+| SolidJS | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 812.3709 |
+| SolidJS | dynamic | 1000x5 - 25 sources (wide dense) | 1358.4530 |
+| SolidJS | dynamic | 5x500 - 3 sources (deep) | 487.8288 |
+| SolidJS | cellx | cellx10 | 0.1114 |
+| SolidJS | cellx | cellx20 | 0.1520 |
+| SolidJS | cellx | cellx30 | 0.0949 |
+| Svelte v5 | kairo | avoidablePropagation | 776.2882 |
+| Svelte v5 | kairo | broadPropagation | 892.3651 |
+| Svelte v5 | kairo | deepPropagation | 387.9007 |
+| Svelte v5 | kairo | diamond | 804.3322 |
+| Svelte v5 | kairo | mux | 359.2200 |
+| Svelte v5 | kairo | repeatedObservers | 97.5711 |
+| Svelte v5 | kairo | triangle | 262.9931 |
+| Svelte v5 | kairo | unstable | 174.3855 |
+| Svelte v5 | mol | molBench | 554.6582 |
+| Svelte v5 | s | createDataSignals | 6.7850 |
+| Svelte v5 | s | createComputations0to1 | 30.3331 |
+| Svelte v5 | s | createComputations1to1 | 37.2426 |
+| Svelte v5 | s | createComputations2to1 | 25.3562 |
+| Svelte v5 | s | createComputations4to1 | 16.9841 |
+| Svelte v5 | s | createComputations1000to1 | 7.6963 |
+| Svelte v5 | s | createComputations1to2 | 29.6720 |
+| Svelte v5 | s | createComputations1to4 | 25.1786 |
+| Svelte v5 | s | createComputations1to8 | 23.8725 |
+| Svelte v5 | s | createComputations1to1000 | 23.3515 |
+| Svelte v5 | s | updateComputations1to1 | 203.9475 |
+| Svelte v5 | s | updateComputations2to1 | 105.5639 |
+| Svelte v5 | s | updateComputations4to1 | 55.6964 |
+| Svelte v5 | s | updateComputations1000to1 | 5.0432 |
+| Svelte v5 | s | updateComputations1to2 | 117.3173 |
+| Svelte v5 | s | updateComputations1to4 | 71.0154 |
+| Svelte v5 | s | updateComputations1to1000 | 25.3886 |
+| Svelte v5 | dynamic | 10x5 - 2 sources - read 20% (simple component) | 993.6918 |
+| Svelte v5 | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 21868.0449 |
+| Svelte v5 | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 10561.9436 |
+| Svelte v5 | dynamic | 1000x5 - 25 sources (wide dense) | 4993.0922 |
+| Svelte v5 | dynamic | 5x500 - 3 sources (deep) | 1156.5906 |
+| Svelte v5 | cellx | cellx10 | 0.2486 |
+| Svelte v5 | cellx | cellx20 | 5.6800 |
+| Svelte v5 | cellx | cellx30 | 7.9399 |
+| @amadeus-it-group/tansu | kairo | avoidablePropagation | 297.8924 |
+| @amadeus-it-group/tansu | kairo | broadPropagation | 667.8799 |
+| @amadeus-it-group/tansu | kairo | deepPropagation | 231.5025 |
+| @amadeus-it-group/tansu | kairo | diamond | 317.0007 |
+| @amadeus-it-group/tansu | kairo | mux | 460.9810 |
+| @amadeus-it-group/tansu | kairo | repeatedObservers | 58.7837 |
+| @amadeus-it-group/tansu | kairo | triangle | 123.7781 |
+| @amadeus-it-group/tansu | kairo | unstable | 172.4889 |
+| @amadeus-it-group/tansu | mol | molBench | 537.7817 |
+| @amadeus-it-group/tansu | s | createDataSignals | 13.1659 |
+| @amadeus-it-group/tansu | s | createComputations0to1 | 16.0875 |
+| @amadeus-it-group/tansu | s | createComputations1to1 | 67.3686 |
+| @amadeus-it-group/tansu | s | createComputations2to1 | 42.1690 |
+| @amadeus-it-group/tansu | s | createComputations4to1 | 22.5333 |
+| @amadeus-it-group/tansu | s | createComputations1000to1 | 22.2707 |
+| @amadeus-it-group/tansu | s | createComputations1to2 | 46.6943 |
+| @amadeus-it-group/tansu | s | createComputations1to4 | 38.6562 |
+| @amadeus-it-group/tansu | s | createComputations1to8 | 31.4344 |
+| @amadeus-it-group/tansu | s | createComputations1to1000 | 34.0146 |
+| @amadeus-it-group/tansu | s | updateComputations1to1 | 43.2692 |
+| @amadeus-it-group/tansu | s | updateComputations2to1 | 27.2118 |
+| @amadeus-it-group/tansu | s | updateComputations4to1 | 17.5142 |
+| @amadeus-it-group/tansu | s | updateComputations1000to1 | 7.2553 |
+| @amadeus-it-group/tansu | s | updateComputations1to2 | 40.4378 |
+| @amadeus-it-group/tansu | s | updateComputations1to4 | 36.8828 |
+| @amadeus-it-group/tansu | s | updateComputations1to1000 | 37.3039 |
+| @amadeus-it-group/tansu | dynamic | 10x5 - 2 sources - read 20% (simple component) | 510.1492 |
+| @amadeus-it-group/tansu | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 261.0684 |
+| @amadeus-it-group/tansu | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 572.8239 |
+| @amadeus-it-group/tansu | dynamic | 1000x5 - 25 sources (wide dense) | 667.2390 |
+| @amadeus-it-group/tansu | dynamic | 5x500 - 3 sources (deep) | 272.5575 |
+| @amadeus-it-group/tansu | cellx | cellx10 | 0.1740 |
+| @amadeus-it-group/tansu | cellx | cellx20 | 0.1504 |
+| @amadeus-it-group/tansu | cellx | cellx30 | 0.1022 |
+| @tldraw/state | kairo | avoidablePropagation | 401.6793 |
+| @tldraw/state | kairo | broadPropagation | 944.3262 |
+| @tldraw/state | kairo | deepPropagation | 317.5327 |
+| @tldraw/state | kairo | diamond | 542.8442 |
+| @tldraw/state | kairo | mux | 577.9765 |
+| @tldraw/state | kairo | repeatedObservers | 73.1716 |
+| @tldraw/state | kairo | triangle | 239.7341 |
+| @tldraw/state | kairo | unstable | 127.6581 |
+| @tldraw/state | mol | molBench | 552.6527 |
+| @tldraw/state | s | createDataSignals | 9.4156 |
+| @tldraw/state | s | createComputations0to1 | 9.1055 |
+| @tldraw/state | s | createComputations1to1 | 24.7953 |
+| @tldraw/state | s | createComputations2to1 | 20.8319 |
+| @tldraw/state | s | createComputations4to1 | 12.2567 |
+| @tldraw/state | s | createComputations1000to1 | 17.5206 |
+| @tldraw/state | s | createComputations1to2 | 26.3361 |
+| @tldraw/state | s | createComputations1to4 | 21.1300 |
+| @tldraw/state | s | createComputations1to8 | 19.2984 |
+| @tldraw/state | s | createComputations1to1000 | 18.2727 |
+| @tldraw/state | s | updateComputations1to1 | 78.0109 |
+| @tldraw/state | s | updateComputations2to1 | 50.1594 |
+| @tldraw/state | s | updateComputations4to1 | 36.2662 |
+| @tldraw/state | s | updateComputations1000to1 | 18.9003 |
+| @tldraw/state | s | updateComputations1to2 | 68.8004 |
+| @tldraw/state | s | updateComputations1to4 | 58.4025 |
+| @tldraw/state | s | updateComputations1to1000 | 47.2485 |
+| @tldraw/state | dynamic | 10x5 - 2 sources - read 20% (simple component) | 806.0021 |
+| @tldraw/state | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 423.6136 |
+| @tldraw/state | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 4964.0880 |
+| @tldraw/state | dynamic | 1000x5 - 25 sources (wide dense) | 3972.8658 |
+| @tldraw/state | dynamic | 5x500 - 3 sources (deep) | 350.7612 |
+| @tldraw/state | cellx | cellx10 | 0.1275 |
+| @tldraw/state | cellx | cellx20 | 0.2266 |
+| @tldraw/state | cellx | cellx30 | 0.1694 |
+| uSignal | kairo | avoidablePropagation | 606.1288 |
+| uSignal | kairo | broadPropagation | 885.4443 |
+| uSignal | kairo | deepPropagation | 283.3382 |
+| uSignal | kairo | diamond | 405.9484 |
+| uSignal | kairo | mux | 672.5798 |
+| uSignal | kairo | repeatedObservers | 54.8550 |
+| uSignal | kairo | triangle | 159.2961 |
+| uSignal | kairo | unstable | 77.6305 |
+| uSignal | mol | molBench | 727.5129 |
+| uSignal | s | createDataSignals | 10.0877 |
+| uSignal | s | createComputations0to1 | 10.6129 |
+| uSignal | s | createComputations1to1 | 56.8912 |
+| uSignal | s | createComputations2to1 | 20.8588 |
+| uSignal | s | createComputations4to1 | 16.8056 |
+| uSignal | s | createComputations1000to1 | 15.0549 |
+| uSignal | s | createComputations1to2 | 51.1398 |
+| uSignal | s | createComputations1to4 | 32.3576 |
+| uSignal | s | createComputations1to8 | 31.5746 |
+| uSignal | s | createComputations1to1000 | 15.7123 |
+| uSignal | s | updateComputations1to1 | 43.5361 |
+| uSignal | s | updateComputations2to1 | 26.7463 |
+| uSignal | s | updateComputations4to1 | 17.1203 |
+| uSignal | s | updateComputations1000to1 | 11.0907 |
+| uSignal | s | updateComputations1to2 | 37.3568 |
+| uSignal | s | updateComputations1to4 | 33.4669 |
+| uSignal | s | updateComputations1to1000 | 36.7770 |
+| uSignal | dynamic | 10x5 - 2 sources - read 20% (simple component) | 513.8338 |
+| uSignal | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 471.5353 |
+| uSignal | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 496.5144 |
+| uSignal | dynamic | 1000x5 - 25 sources (wide dense) | 1221.3815 |
+| uSignal | dynamic | 5x500 - 3 sources (deep) | 342.6340 |
+| uSignal | cellx | cellx10 | 0.1030 |
+| uSignal | cellx | cellx20 | 0.1431 |
+| uSignal | cellx | cellx30 | 0.0908 |
+| @vue/reactivity | kairo | avoidablePropagation | 261.4051 |
+| @vue/reactivity | kairo | broadPropagation | 534.6526 |
+| @vue/reactivity | kairo | deepPropagation | 152.1300 |
+| @vue/reactivity | kairo | diamond | 281.7336 |
+| @vue/reactivity | kairo | mux | 434.9632 |
+| @vue/reactivity | kairo | repeatedObservers | 26.0455 |
+| @vue/reactivity | kairo | triangle | 93.3615 |
+| @vue/reactivity | kairo | unstable | 63.9053 |
+| @vue/reactivity | mol | molBench | 525.3353 |
+| @vue/reactivity | s | createDataSignals | 9.5507 |
+| @vue/reactivity | s | createComputations0to1 | 8.1643 |
+| @vue/reactivity | s | createComputations1to1 | 20.5636 |
+| @vue/reactivity | s | createComputations2to1 | 14.5406 |
+| @vue/reactivity | s | createComputations4to1 | 12.9402 |
+| @vue/reactivity | s | createComputations1000to1 | 13.4152 |
+| @vue/reactivity | s | createComputations1to2 | 17.5439 |
+| @vue/reactivity | s | createComputations1to4 | 14.7182 |
+| @vue/reactivity | s | createComputations1to8 | 13.9566 |
+| @vue/reactivity | s | createComputations1to1000 | 14.4874 |
+| @vue/reactivity | s | updateComputations1to1 | 25.5878 |
+| @vue/reactivity | s | updateComputations2to1 | 18.6657 |
+| @vue/reactivity | s | updateComputations4to1 | 13.0931 |
+| @vue/reactivity | s | updateComputations1000to1 | 7.9032 |
+| @vue/reactivity | s | updateComputations1to2 | 21.0341 |
+| @vue/reactivity | s | updateComputations1to4 | 19.3030 |
+| @vue/reactivity | s | updateComputations1to1000 | 18.4167 |
+| @vue/reactivity | dynamic | 10x5 - 2 sources - read 20% (simple component) | 404.8426 |
+| @vue/reactivity | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 265.6525 |
+| @vue/reactivity | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 446.3182 |
+| @vue/reactivity | dynamic | 1000x5 - 25 sources (wide dense) | 784.5813 |
+| @vue/reactivity | dynamic | 5x500 - 3 sources (deep) | 261.2566 |
+| @vue/reactivity | cellx | cellx10 | 0.1267 |
+| @vue/reactivity | cellx | cellx20 | 0.1827 |
+| @vue/reactivity | cellx | cellx30 | 0.1195 |
+| @pravosleva/reactive-engine | kairo | avoidablePropagation | 288.0453 |
+| @pravosleva/reactive-engine | kairo | broadPropagation | 402.5316 |
+| @pravosleva/reactive-engine | kairo | deepPropagation | 141.2046 |
+| @pravosleva/reactive-engine | kairo | diamond | 236.8880 |
+| @pravosleva/reactive-engine | kairo | mux | 329.2125 |
+| @pravosleva/reactive-engine | kairo | repeatedObservers | 31.2001 |
+| @pravosleva/reactive-engine | kairo | triangle | 78.1989 |
+| @pravosleva/reactive-engine | kairo | unstable | 63.0029 |
+| @pravosleva/reactive-engine | mol | molBench | 527.3795 |
+| @pravosleva/reactive-engine | s | createDataSignals | 12.2007 |
+| @pravosleva/reactive-engine | s | createComputations0to1 | 33.2006 |
+| @pravosleva/reactive-engine | s | createComputations1to1 | 54.9979 |
+| @pravosleva/reactive-engine | s | createComputations2to1 | 37.5860 |
+| @pravosleva/reactive-engine | s | createComputations4to1 | 28.0569 |
+| @pravosleva/reactive-engine | s | createComputations1000to1 | 129.0106 |
+| @pravosleva/reactive-engine | s | createComputations1to2 | 47.1511 |
+| @pravosleva/reactive-engine | s | createComputations1to4 | 43.7097 |
+| @pravosleva/reactive-engine | s | createComputations1to8 | 41.7617 |
+| @pravosleva/reactive-engine | s | createComputations1to1000 | 41.3677 |
+| @pravosleva/reactive-engine | s | updateComputations1to1 | 58.0795 |
+| @pravosleva/reactive-engine | s | updateComputations2to1 | 30.8959 |
+| @pravosleva/reactive-engine | s | updateComputations4to1 | 17.1274 |
+| @pravosleva/reactive-engine | s | updateComputations1000to1 | 3.4134 |
+| @pravosleva/reactive-engine | s | updateComputations1to2 | 36.2607 |
+| @pravosleva/reactive-engine | s | updateComputations1to4 | 26.3634 |
+| @pravosleva/reactive-engine | s | updateComputations1to1000 | 16.9223 |
+| @pravosleva/reactive-engine | dynamic | 10x5 - 2 sources - read 20% (simple component) | 408.7020 |
+| @pravosleva/reactive-engine | dynamic | 10x10 - 6 sources - dynamic - read 20% (dynamic component) | 180.8571 |
+| @pravosleva/reactive-engine | dynamic | 1000x12 - 4 sources - dynamic (large web app) | 340.1638 |
+| @pravosleva/reactive-engine | dynamic | 1000x5 - 25 sources (wide dense) | 502.5280 |
+| @pravosleva/reactive-engine | dynamic | 5x500 - 3 sources (deep) | 186.7674 |
+| @pravosleva/reactive-engine | cellx | cellx10 | 0.0755 |
+| @pravosleva/reactive-engine | cellx | cellx20 | 0.1021 |
+| @pravosleva/reactive-engine | cellx | cellx30 | 0.1641 |
