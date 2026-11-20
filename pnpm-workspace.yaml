@@ -2,3 +2,4 @@ allowBuilds:
   esbuild: true
 minimumReleaseAgeExclude:
   - '@solidjs/signals@2.0.0-rc.22'
+  - reflex-quant@1.3.0
